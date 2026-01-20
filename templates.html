@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Buddy-AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="main">
+
+    <div class="topbar">
+        <h2>📚 Study Buddy-AI</h2>
+        <p>Study Purpose Only ✅ | Doubts • Timetable • Graphs</p>
+    </div>
+
+    <div class="chatbox">
+        <div class="botmsg">
+            Hi! I am <b>Study Buddy-AI</b> 🤖📘 <br>
+            Ask your academic doubt OR generate timetable OR graph.
+        </div>
+
+        {% if user_input %}
+        <div class="usermsg">
+            {{ user_input }}
+        </div>
+        {% endif %}
+
+        {% if response %}
+        <div class="botmsg">
+            <b>✅ Answer:</b><br><br>
+            <pre>{{ response }}</pre>
+
+            {% if graph_img %}
+                <img src="{{ url_for('static', filename=graph_img) }}" class="graphimg">
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="inputarea">
+        <form method="POST" class="formrow">
+
+            <select name="subject">
+                <option value="maths">Maths</option>
+                <option value="physics">Physics</option>
+                <option value="mtc">MTC</option>
+                <option value="english">English</option>
+                <option value="c">C</option>
+            </select>
+
+            <input type="text" name="user_input" placeholder="Type question / subjects / function..." required>
+
+            <button type="submit" name="feature" value="doubt">Solve</button>
+            <button type="submit" name="feature" value="timetable">TT</button>
+            <button type="submit" name="feature" value="graph">Graph</button>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</
