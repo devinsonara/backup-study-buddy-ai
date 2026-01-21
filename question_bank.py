@@ -40,7 +40,9 @@ QUESTION_BANK = {
             "q": "Find sum of first 20 natural numbers",
             "a": "Sum of first n natural numbers = n(n+1)/2\nFor n=20:\nSum = 20*21/2 = 210\n\n✅ Final Answer: 210"
         }
-    ],    "physics": [
+    ],
+
+    "physics": [
         {
             "q": "Define Newton’s First Law with example",
             "a": "Newton’s First Law:\nA body remains at rest or continues in uniform motion in a straight line unless acted upon by an external force.\n\nExample:\nA book lying on a table stays at rest until someone pushes it.\n\n✅ Key Idea: Inertia (resistance to change in motion)"
@@ -81,7 +83,9 @@ QUESTION_BANK = {
             "q": "Explain SHM with example",
             "a": "Simple Harmonic Motion (SHM):\nMotion in which restoring force is proportional to displacement and acts towards mean position.\n\nExample:\nOscillation of a mass-spring system or pendulum (small angles).\n\n✅ Key point: Periodic motion."
         }
-    ],    "mtc": [
+    ],
+
+    "mtc": [
         {
             "q": "Solve using matrix method: x + y = 3, 2x + 3y = 8",
             "a": "Given:\n(1) x + y = 3\n(2) 2x + 3y = 8\n\nFrom (1): x = 3 - y\nSubstitute in (2):\n2(3 - y) + 3y = 8\n6 - 2y + 3y = 8\ny = 2\nx = 3 - 2 = 1\n\n✅ Final Answer: x = 1, y = 2"
@@ -122,7 +126,9 @@ QUESTION_BANK = {
             "q": "Define orthogonal matrix with example",
             "a": "Orthogonal Matrix:\nA matrix A is orthogonal if:\nA^T A = I\n\nExample:\n| 0 1 |\n| -1 0 |\nThis satisfies A^T A = I\n\n✅ Key point: inverse = transpose (A^-1 = A^T)"
         }
-    ],    "english": [
+    ],
+
+    "english": [
         {
             "q": "What is communication? Explain its process.",
             "a": "Communication is the process of exchanging information, ideas, or feelings between sender and receiver.\n\nProcess:\n1) Sender\n2) Message\n3) Encoding\n4) Channel/Medium\n5) Receiver\n6) Decoding\n7) Feedback\n8) Noise (barriers)\n\n✅ Goal: understanding and response"
@@ -163,14 +169,16 @@ QUESTION_BANK = {
             "q": "Importance of body language",
             "a": "Body language is non-verbal communication through posture, gestures, expressions, and eye contact.\n\nImportance:\n- Builds confidence\n- Shows interest\n- Improves personality impression\n\n✅ In interviews, body language matters a lot."
         }
-    ],    "c": [
+    ],
+
+    "c": [
         {
             "q": "Write a C program to check even or odd number",
             "a": "Program:\n\n#include <stdio.h>\n#include <conio.h>\n\nint main()\n{\n    int n;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n\n    if(n % 2 == 0)\n        printf(\"Even number\");\n    else\n        printf(\"Odd number\");\n\n    return 0;\n}\n\n✅ Logic: Even if divisible by 2."
         },
         {
             "q": "Difference between while and do-while loop",
-            "a": " while loop:\n- Condition checked first\n- May execute 0 times\n\n✅ do-while loop:\n- Executes at least once\n- Condition checked after execution\n\nExample:\nwhile(condition) { }\n\ndo { } while(condition);"
+            "a": "✅ while loop:\n- Condition checked first\n- May execute 0 times\n\n✅ do-while loop:\n- Executes at least once\n- Condition checked after execution\n\nExample:\nwhile(condition) { }\n\ndo { } while(condition);"
         },
         {
             "q": "What is a pointer? Give example",
@@ -206,4 +214,3 @@ QUESTION_BANK = {
         }
     ]
 }
-
